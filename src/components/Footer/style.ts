@@ -30,7 +30,7 @@ export const IconsSocial = styled.img`
 `
 
 export const Date = styled.section`
-    width: 50rem;
+    width: 55%;
     height: 100%;
     display: flex;
     justify-content: center;

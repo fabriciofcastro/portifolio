@@ -5,7 +5,7 @@ export default function Home() {
    <S.Container>
     <S.BoxText>
       <S.Text>
-          <S.P type="ola"> Olá!              </S.P> 
+          <S.P type="ola"> Olá! 🤙             </S.P> 
           <S.P type="sou"> Eu sou um         </S.P> 
           <S.P type="developer"> programador </S.P> 
           <S.P type="recepcao">Seja bem-vindo ao meu portifólio website</S.P>

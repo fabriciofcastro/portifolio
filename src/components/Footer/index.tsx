@@ -13,7 +13,8 @@ const Footer: React.FC = () => {
                 <S.IconsSocial src={instagram.src} alt="" />
             </S.NetSocial>
             <S.Date >
-                <S.TextFooter> &#169; Fabricio Castro </S.TextFooter>
+                <S.TextFooter>  &#169; Developer by 
+                 Fabricio Castro </S.TextFooter>
                 <S.TextFooter>  &#187; </S.TextFooter>
                 <S.TextFooter>  2022 &#174; </S.TextFooter>
                 <S.TextFooter>  Termos </S.TextFooter>

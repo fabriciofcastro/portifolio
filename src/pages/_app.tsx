@@ -7,13 +7,15 @@ import Layout from '../components/Layout/layout'
 
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return(
-  <ThemeProvider theme={ theme }>
-    <Layout>
-       <Component { ...pageProps } />
-    </Layout>
-    <GlobalStyle />
-    </ThemeProvider>
+  return( 
+    <>
+      <ThemeProvider theme={ theme }>
+         <Layout>
+           <Component {...pageProps } />
+         </Layout>
+         <GlobalStyle />
+      </ThemeProvider>
+    </>
   )
 }
 

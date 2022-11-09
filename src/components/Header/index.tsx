@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             <Link href="/about" >
             <S.Span>SOBRE</S.Span>
             </Link>
-            <Link href="/">
+            <Link href="/portifolio">
                 <S.Span>PORTIFÓLIO</S.Span>
             </Link>
             <Link href="/" >
