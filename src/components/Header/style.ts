@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import comeia from '/public/comeia_pentagono_cinza.svg'
+import logo from 'public/logo.svg'
 
 export const Header = styled.header`
     width: 120rem;
@@ -41,6 +42,7 @@ const getStyle = type => {
             padding: 1.2rem 0;
             border-radius: .5rem;
             text-align: center;
+
         `;
     }
 }
@@ -48,7 +50,10 @@ const getStyle = type => {
 export const Span = styled.span`
     color: ${({theme}) => theme.colors.textPrimary};
     font-weight: 600;
+    font-size: 1.3rem;
     display: block;
     ${({type}) => getStyle(type)}
+
+       
 `
 

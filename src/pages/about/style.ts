@@ -7,20 +7,28 @@ export const Container = styled.div`
 `
 
 export const BoxImg = styled.div`
-    width: 100%;
-  
+    width: 120rem;
+    height: 15rem;
     display: flex;
     align-items: center;
 `
 
 export const Sobremim =styled.section`
-    width: 56rem;
+    width: 53rem;
     height: 100%;
 `
 
-export const ImgPessoal = styled.img`
-    width: 10rem;
+export const BoxPessoalImg = styled.section`
+    width: 40rem;
 `
+export const ImgPessoal = styled.img`
+    width: 40%
+`
+
+export const Foto = styled.img`
+    width: 30%;
+`
+
 export const BoxApresent = styled.section`
     width: 75rem;
     height: 28rem;

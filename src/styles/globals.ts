@@ -9,12 +9,14 @@ const GlobaStyle = createGlobalStyle`
 
   :root {
     font-size: 62.5%;
+    width: 100%;
   }
 
   body {
     background: ${({theme}) => theme.colors.background};
     color: ${props => props.theme.colors.textPrimary};
-    font: 400 16px Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     width: 1366px;
     height: 768px;
     margin: auto;
