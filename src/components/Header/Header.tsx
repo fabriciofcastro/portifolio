@@ -29,13 +29,13 @@ const Header: React.FC = () => {
             <Link href="/portifolio">
                 <S.Span>PORTIFÓLIO</S.Span>
             </Link>
-            <Link href="/" >
+            <Link href="/servicos" >
                 <S.Span>SERVIÇOS</S.Span>
             </Link>
-            <Link href="/" >
+            <Link href="/resumo" >
                 <S.Span>RESUMO</S.Span>
             </Link>
-            <Link href="/" >
+            <Link href="/contato" >
                 <S.Span type="contato" >CONTATO</S.Span>
             </Link>
            </S.Nav>

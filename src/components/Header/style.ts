@@ -52,6 +52,7 @@ export const Span = styled.span`
     font-weight: 600;
     font-size: 1.3rem;
     display: block;
+    cursor: pointer;
     ${({type}) => getStyle(type)}
 
        

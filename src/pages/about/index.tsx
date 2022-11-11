@@ -21,9 +21,7 @@ const About: React.FC = () => {
           <S.Sobremim>
           <S.ImgPessoal src={sobremim.src} alt="" />
           </S.Sobremim>
-          <S.BoxPessoalImg>
-             <S.Foto src={foto.src} alt="" />
-          </S.BoxPessoalImg>
+          
         </S.BoxImg>
         <S.BoxApresent>
           <S.Nome>

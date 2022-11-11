@@ -1,11 +1,21 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-import erro404 from '/public/404Page.svg' 
+import * as S from './style'
 
 const NotFound404: React.FC = () => {
-  return <>
-    <Image src={erro404.src} width={600} height={700} alt="Imagem de erro" />
-  </>
+  return (
+    <S.Container>
+      <S.box>
+      <Link href="/" >
+        <S.Button>
+            Voltar para Home
+        </S.Button>
+      </Link>
+      </S.box>
+      
+    </S.Container>
+  )
 }
 
 export default NotFound404;
