@@ -77,6 +77,7 @@ export const Button = styled.input`
     font-size: 2rem;
     border: 1px solid #48555e;
     box-shadow: .3rem .5rem 1rem #263138;
+    cursor: pointer;
 `
 
 

@@ -50,7 +50,7 @@ const getStyle = type => {
 export const Span = styled.span`
     color: ${({theme}) => theme.colors.textPrimary};
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: block;
     cursor: pointer;
     ${({type}) => getStyle(type)}

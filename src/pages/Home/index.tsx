@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import * as S from './style'
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
           <S.P type="recepcao">Seja bem-vindo ao meu portifólio website</S.P>
       </S.Text>
       <S.BoxButton>
-        <S.Button type="button" value="Saiba mais sobre mim"/>
+        <Link href="/sobre" >
+          <S.Button type="button" value="Saiba mais sobre mim"/>
+        </Link>
       </S.BoxButton>
 
     </S.BoxText>
