@@ -1,17 +1,13 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import * as S from './style'
 import logo from '/public/logo.svg'
 
 
 const Header: React.FC = () => {
 
-    <style>
-        
-    </style>
-
+  
     return (
-    <>
+    
         <S.Header>
            <S.BoxLogo>
             <Image src={logo.src} alt="" width={50} height={50} />
@@ -20,27 +16,26 @@ const Header: React.FC = () => {
             </S.TextoLogo>
            </S.BoxLogo>
            <S.Nav>
-            <Link href="/" >
-               <S.Span>HOME</S.Span>
-            </Link>
-            <Link href="/about" >
-            <S.Span>SOBRE</S.Span>
-            </Link>
-            <Link href="/portifolio">
-                <S.Span>PORTIFÓLIO</S.Span>
-            </Link>
-            <Link href="/servicos" >
-                <S.Span>SERVIÇOS</S.Span>
-            </Link>
-            <Link href="/resumo" >
-                <S.Span>RESUMO</S.Span>
-            </Link>
-            <Link href="/contato" >
-                <S.Span type="contato" >CONTATO</S.Span>
-            </Link>
+            <S.Linkk href="/" >
+               HOME
+            </S.Linkk>
+            <S.Linkk href="/about" >
+                SOBRE
+            </S.Linkk>
+            <S.Linkk href="/portifolio">
+               PORTIFÓLIO
+            </S.Linkk>
+            <S.Linkk href="/servicos" >
+                SERVIÇOS
+            </S.Linkk>
+            <S.Linkk href="/resumo" >
+                RESUMO
+            </S.Linkk>
+            <S.Linkk href="/contato" type="contato" >
+                CONTATO
+            </S.Linkk>
            </S.Nav>
         </S.Header>
-    </>
   )
 }
 

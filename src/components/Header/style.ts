@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import comeia from '/public/comeia_pentagono_cinza.svg'
 import logo from 'public/logo.svg'
+import Link from "next/link";
 
 export const Header = styled.header`
     width: 120rem;
@@ -31,8 +32,8 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: space-between;
 `
-
 const getStyle = type => {
+
     if(type === "contato") {
         return`
             color: #ffffff;
@@ -42,12 +43,11 @@ const getStyle = type => {
             padding: 1.2rem 0;
             border-radius: .5rem;
             text-align: center;
-
         `;
     }
 }
 
-export const Span = styled.span`
+export const Linkk = styled(Link)`
     color: ${({theme}) => theme.colors.textPrimary};
     font-weight: 600;
     font-size: 1.5rem;

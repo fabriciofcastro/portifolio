@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import comeia from 'public/comeia_pentagono.svg'
+import Link from "next/link";
+import Image from "next/image";
 
 export const Container = styled.div`
     width: 120rem;
@@ -20,13 +22,18 @@ export const Back = styled.footer`
 export const NetSocial = styled.section`
     width: 30rem;
     height: 100%;
-    display: flex;
-    justify-content: space-around;
+    display: flex; 
+    align-items: center;
 `
 
-export const IconsSocial = styled.img`
-    width: 10%;
-    color: red
+export const Lin = styled(Link)`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`
+
+export const IconsSocial = styled(Image)`
+
 `
 
 export const Date = styled.section`
@@ -36,6 +43,7 @@ export const Date = styled.section`
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    cursor: pointer;
 `
 
 export const TextFooter = styled.p`
