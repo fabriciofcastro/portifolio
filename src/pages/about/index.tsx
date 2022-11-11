@@ -30,7 +30,7 @@ const About: React.FC = () => {
           <S.Descricao>
          
               Meu nome é Fabrício Castro 👋 moro em São Paulo/SP.
-              Estudo por 5 meses fron-end. Cursando na plataforma de ensino Alura, Rocketseat.
+              Estudo por 5 meses front-end. Cursando na plataforma de ensino Alura, Rocketseat.
          
           </S.Descricao>
           <S.Descricao>
@@ -43,6 +43,7 @@ const About: React.FC = () => {
           </S.Descricao>
         </S.BoxApresent>
         <S.HardSkills>
+          
         <S.TitleHard>Hard <span> Skiils</span></S.TitleHard>
             
             <S.Tecnologia>

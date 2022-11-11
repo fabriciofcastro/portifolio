@@ -35,7 +35,7 @@ const contact: React.FC = () => {
               Deixe sua emnsagem. 
             </S.TextoContatoideia>
             <S.TextoContatoideia>
-              Há! caso queira montar um clube para criar um mundo melhor
+              Há! caso queira montar um comunidade para criar um mundo melhor
             </S.TextoContatoideia>
           </S.BoxTextoContatoIdeia>
           <S.ImgAvatar src={avatar.src} alt="" />
@@ -47,7 +47,16 @@ const contact: React.FC = () => {
         </S.BoxTextoContatoIdeia>
         </S.BoxFigure>
         <S.BoxForm  >
+          <S.Form method='GET' autoComplete='off'>
+               <S.Label for="nome">Nome:</S.Label>
+               <S.Input id='nome' type="text"/>
 
+               <S.Label for="sobrenome">Sobre Nome:</S.Label>
+               <S.Input id='sobrenome' type="text"/>
+
+               <S.Label for="email">E-mail:</S.Label>
+               <S.Input id='email' type="text"/>
+          </S.Form>
         </S.BoxForm>
 
       </S.BoxContent>

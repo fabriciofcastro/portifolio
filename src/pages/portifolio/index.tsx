@@ -9,7 +9,9 @@ import projectImg4 from 'public/project4.webp'
 import projectImg5 from 'public/project5.webp'
 import projectImg6 from 'public/project6.webp'
 
-const portifolio: React.FC = () => {
+import Swiper from 'swiper/react';
+
+const portifolio = () => {
   return (
     <S.Container>
       <S.Header>
@@ -28,7 +30,9 @@ const portifolio: React.FC = () => {
         <ButtonOff>Apps</ButtonOff>
         <ButtonOff>Todos</ButtonOff>
       </S.BoxButtons>
+      
       <S.Project>
+         
         <S.ProjectChildren>
           <S.Project1>
             <S.ImgProject src={projectImg1.src} alt="" />
@@ -49,6 +53,7 @@ const portifolio: React.FC = () => {
             <S.ImgProject src={projectImg6.src} alt="" />
           </S.Project6>
         </S.ProjectChildren>
+      
       </S.Project>
     </S.Container>
   )

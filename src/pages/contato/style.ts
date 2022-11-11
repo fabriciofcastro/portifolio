@@ -76,3 +76,26 @@ export const BoxFigure = styled.section`
 export const ImgAvatar = styled.img`
     width: 50%;
 `
+
+
+/**
+ *  F O R M U L A R I O 
+ */
+
+export const Form = styled.form`
+    width: 40rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+`
+export const Fildset = styled.fieldset`
+    display: block;
+`
+
+export const Label = styled.label`
+    
+`
+
+export const Input = styled.input`
+`
