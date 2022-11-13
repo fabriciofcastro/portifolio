@@ -1,12 +1,22 @@
 import React from 'react';
-import { convertToObject } from 'typescript';
 import * as S from './style'
 import contato from 'public/contato.svg'
 import avatar from 'public/avatar.svg'
+import Head from 'next/head';
 
 
 const contact: React.FC = () => {
   return (
+    <>
+    <Head>
+    <title> Contato - Fabrício Castro</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="robots" content="noindex"/>
+      <meta name="description" 
+            content="Portifílio Fabrício Castro, Desenvolvedor front-end, 
+            html, css, javascript, react, next, sqlPostgree, StoryBook ">
+      </meta>
+    </Head>
     <S.Container>
       <S.BoxLogoContact>
         <S.ImgContato src={contato.src} alt="" />
@@ -56,11 +66,14 @@ const contact: React.FC = () => {
 
                <S.Label for="email">E-mail:</S.Label>
                <S.Input id='email' type="text"/>
+
+               <S.Button>Enviar</S.Button>
           </S.Form>
         </S.BoxForm>
 
       </S.BoxContent>
     </S.Container>
+    </>
   )
 }
 

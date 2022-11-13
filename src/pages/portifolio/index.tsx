@@ -10,9 +10,20 @@ import projectImg5 from 'public/project5.webp'
 import projectImg6 from 'public/project6.webp'
 
 import Swiper from 'swiper/react';
+import Head from 'next/head';
 
 const portifolio = () => {
   return (
+    <>
+    <Head>
+    <title> Portifólio - Fabrício Castro</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="robots" content="noindex"/>
+      <meta name="description" 
+            content="Portifílio Fabrício Castro, Desenvolvedor front-end, 
+            html, css, javascript, react, next, sqlPostgree, StoryBook ">
+      </meta>
+    </Head>
     <S.Container>
       <S.Header>
         <S.BoxImg>
@@ -56,6 +67,7 @@ const portifolio = () => {
       
       </S.Project>
     </S.Container>
+    </>
   )
 }
 

@@ -13,9 +13,20 @@ import postgres from 'public/postgres.svg'
 import sobremim from 'public/sobremim.svg'
 
 import React from 'react';
+import Head from 'next/head'
 
 const About: React.FC = () => {
   return (
+    <>
+    <Head>
+      <title> Sobre Mim - Fabrício Castro</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="robots" content="noindex"/>
+      <meta name="description" 
+            content="Portifílio Fabrício Castro, Desenvolvedor front-end, 
+            html, css, javascript, react, next, sqlPostgree, StoryBook ">
+      </meta>
+    </Head>
     <S.Container>
         <S.BoxImg >
           <S.Sobremim>
@@ -78,6 +89,7 @@ const About: React.FC = () => {
             </S.Tecnologia>
         </S.HardSkills>
     </S.Container>
+    </>
   )
 }
 
