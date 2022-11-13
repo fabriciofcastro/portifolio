@@ -9,6 +9,10 @@ export const Container = styled.div`
     margin: auto;
 `
 
+export const Logo = styled.img`
+
+`
+
 export const Back = styled.footer`
     background-color: #47555f90 ;
     background-image: url('${comeia.src}');

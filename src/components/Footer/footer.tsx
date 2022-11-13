@@ -2,7 +2,7 @@ import * as S from './style'
 import git from '/public/Git.svg'
 import linkedin from 'public/Linkedin.svg'
 import instagram from 'public/Instagram.svg'
-import Link from 'next/link'
+import logo from 'public/logo.svg'
 
 const Footer: React.FC = () => {
   return (
@@ -21,11 +21,13 @@ const Footer: React.FC = () => {
             </S.NetSocial>
 
             <S.Date >
-                <S.TextFooter>  &#169; Developer by 
+              <S.Logo src={logo.src} alt="" />
+                <S.TextFooter> Developer by 
                  Fabricio Castro </S.TextFooter>
                 <S.TextFooter>  &#187; </S.TextFooter>
                 <S.TextFooter>  2022 &#174; </S.TextFooter>
                 <S.TextFooter>  Termos </S.TextFooter>
+                <S.TextFooter>  Privacidade </S.TextFooter>
           
             </S.Date>
           
