@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import imgDesenvolvedor from 'public/desenvolvedor.svg'
 
+
+
 export const Container = styled.div`
     width: 120rem;
     height: 70rem;
@@ -21,46 +23,16 @@ export const Text = styled.section`
     justify-content: center;
     flex-direction: column;
 `
-
-const getStyle = type => {
-    if(type === "ola") {
-        return`
-            font-size: 2.4rem;
-    `;
-    }
-
-    if (type === "sou") {
-        return`
-             font-size: 7.2rem;
-             margin-top: 1rem;
-             text-transform: uppercase;
-        `;
-    }
-
-    if(type === "developer") {
-        return`
-            font-size: 7.2rem;
-            text-transform: uppercase;
-        `;
-    }
-
-    if(type === "recepcao") {
-        return`
-        font-size: 2.4rem;
-        margin-top: 1rem
-        `
-    }
-}
-
-export const P = styled.p`
-    ${({type}) => getStyle(type)}
-
+export const Descricao = styled.p`
+    font-size: 2rem;
+    padding-top: 1rem;
+    line-height: 2.7rem;
 `
 
-export const Apresentacao = styled.p`
-   
-   
+export const Titulo = styled.h1`
+    font-size: 4rem;
 `
+
 export const BoxButton = styled.div`
     height: 19rem;
     width: 100%;
@@ -79,9 +51,6 @@ export const Button = styled.input`
     box-shadow: .3rem .5rem 1rem #263138;
     cursor: pointer;
 `
-
-
-
 
 export const BoxImg = styled.section`
     width: 60rem;

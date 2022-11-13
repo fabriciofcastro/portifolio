@@ -9,10 +9,6 @@ export const Container = styled.div`
     margin: auto;
 `
 
-export const Logo = styled.img`
-
-`
-
 export const Back = styled.footer`
     background-color: #47555f90 ;
     background-image: url('${comeia.src}');
@@ -24,32 +20,20 @@ export const Back = styled.footer`
 `
 
 export const NetSocial = styled.section`
-    width: 30rem;
+    width: 100%;
     height: 100%;
     display: flex; 
     align-items: center;
+    justify-content: center;
 `
 
 export const Lin = styled(Link)`
-    width: 100%;
-    display: flex;
-    justify-content: center;
+   padding: 1rem 5rem;
 `
 
 export const IconsSocial = styled(Image)`
 
 `
 
-export const Date = styled.section`
-    width: 55%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    cursor: pointer;
-`
 
-export const TextFooter = styled.p`
-   padding: 1rem;
-`
+

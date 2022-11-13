@@ -30,31 +30,26 @@ export const Nav = styled.nav`
     width: 86rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 `
-const getStyle = type => {
-
-    if(type === "contato") {
-        return`
-            color: #ffffff;
-            background: #263138;
-            width: 13rem;
-            height: 4rem;
-            padding: 1.2rem 0;
-            border-radius: .5rem;
-            text-align: center;
-        `;
-    }
-}
 
 export const Linkk = styled(Link)`
     color: ${({theme}) => theme.colors.textPrimary};
     font-weight: 600;
     font-size: 1.5rem;
     display: block;
-    cursor: pointer;
-    ${({type}) => getStyle(type)}
+    padding: 0 7rem;
 
-       
+        &:nth-child(1) {
+            font-size: 2rem;
+        }
+
+        &:nth-child(2) {
+            background-color: #263138;
+            color: #fff;
+            border: 1px solid;
+            padding: 1.5rem 2rem;
+            border-radius: 2rem;
+        }
 `
 

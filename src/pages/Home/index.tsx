@@ -17,13 +17,26 @@ export default function Home() {
    <S.Container>
     <S.BoxText>
       <S.Text>
-          <S.P type="ola"> Olá! 🤙           </S.P> 
-          <S.P type="sou"> Eu sou um         </S.P> 
-          <S.P type="developer"> programador </S.P> 
-          <S.P type="recepcao">Seja bem-vindo ao meu portifólio website</S.P>
+          <S.Titulo>
+            Olá!
+          </S.Titulo>
+          <S.Descricao>
+         
+              Meu nome é Fabrício Castro, moro em São Paulo/SP.
+              Estudo por 5 meses front-end. Cursando na plataforma de ensino Alura, Rocketseat.
+         
+          </S.Descricao>
+          <S.Descricao>
+               
+               Tenho 36 anos, estou em transição de carreira, vindo da área de varejo de hardware, montagem de computadores, manutenção de microcomputadores e notebooks, onde desenvolvi experiência com gestão de pessoas, gestão de empresas e negociação com cliente, trabalha em equipe.
+
+          </S.Descricao>
+          <S.Descricao>
+          Hoje construo aplicações Front-end!
+          </S.Descricao>
       </S.Text>
       <S.BoxButton>
-        <Link href="/about" >
+        <Link href="/portifolio" >
           <S.Button type="button" value="Saiba mais sobre mim"/>
         </Link>
       </S.BoxButton>
