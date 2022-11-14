@@ -35,13 +35,19 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal()
     }
-  }
+  }  
+    
 
   render(): JSX.Element {
     return (
+      
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet" />
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+          <meta name="viewport" content="viewport-fit=cover" />
+          
         </Head>
         <body>
           <Main />

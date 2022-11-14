@@ -16,59 +16,84 @@ import mobile5 from 'public/mobile5.webp'
 import mobile6 from 'public/mobile6.webp'
 
 import Head from 'next/head';
-import { it } from 'node:test';
+
+const portifolioItems = [
+  {
+    category: "website",
+    image:  projectImg1.src,
+    style: S.Project1
+  },
+
+  {
+    category: "website",
+    image: projectImg2.src,
+    style: S.Project2
+  },
+
+  {
+    category: "website",
+    image: projectImg3.src,
+    style: S.Project3
+  },
+
+  {
+    category: "website",
+    image: projectImg4.src,
+    style: S.Project4
+  },
+
+  {
+    category: "website",
+    image: projectImg5.src,
+    style: S.Project5
+  },
+  {
+    category: "website",
+    image: projectImg6.src,
+    style: S.Project6
+  },
+
+  {
+    category: "app",
+    image: mobile.src,
+    style: S.Project1
+  },
+
+  {
+    category: "app",
+    image: mobile2.src,
+    style: S.Project2
+  },
+
+  {
+    category: "app",
+    image: mobile3.src,
+    style: S.Project3
+  },
+
+  {
+    category: "app",
+    image: mobile4.src,
+    style: S.Project4
+  },
+
+  {
+    category: "app",
+    image: mobile5.src,
+    style: S.Project5
+  },
+
+  {
+    category: "app",
+    image: mobile6.src,
+    style: S.Project6
+  },
+]
+
 
 const portifolio = () => {
 
-  const dataImg = [
-        mobile, projectImg1, 
-        mobile6, projectImg3,  
-        mobile5, mobile4, 
-        projectImg2, mobile2,
-        projectImg4, mobile3,
-        projectImg5, projectImg6
- ]
-
- const dataObject = [
-    {
-      web: projectImg1,
-      app: mobile
-    },
-
-    {
-      web: projectImg2,
-      app: mobile2
-    },
-
-    {
-      web: projectImg3,
-      app: mobile3
-    },
-
-    {
-      web: projectImg4,
-      app: mobile4
-    },
-
-    {
-      web: projectImg5,
-      app: mobile5
-    },
-
-    {
-      web: projectImg6,
-      app: mobile6
-    },
- ]
-
- const [data, setData] = useState(dataObject)
-
- function PageWeb() {
-  const web = dataObject.filter(item => {
-    item.web
-  })
-    setData(web)
-}
+  const [data, setData] = useState(portifolioItems)
 
   return (
     <>
@@ -89,65 +114,20 @@ const portifolio = () => {
       </S.Header>
       <S.BoxButtons>
         <ButtonActive>TODOS</ButtonActive>
-        <ButtonOff onChange={PageWeb}>Webs Sites</ButtonOff>
+        <ButtonOff >Webs Sites</ButtonOff>
         <ButtonOff>Apps</ButtonOff>
       </S.BoxButtons>
       
       <S.Project>
          
         <S.ProjectChildren>
-          
-           {
-             data.map((item, i) => {
-              
-              if (i === 0) {
-                return (
-                  <S.Project1>
-                     <S.ImgProject src={item.web.src} alt="" />
-         	        </S.Project1>
-                )
-              }
-              else if (i === 1) {
-                return (
-                  <S.Project2>
-                     <S.ImgProject src={item.app.src} alt="" />
-         	        </S.Project2>
-                )
-              }
-              else if (i === 2) {
-                return (
-                  <S.Project3>
-                     <S.ImgProject src={item.web.src} alt="" />
-         	        </S.Project3>
-                )
-              }
-
-              else if (i === 3) {
-                return (
-                  <S.Project4>
-                     <S.ImgProject src={item.app.src} alt="" />
-         	        </S.Project4>
-                )
-              }
-
-              else if (i === 4) {
-                return (
-                  <S.Project5>
-                     <S.ImgProject src={item.web.src} alt="" />
-         	        </S.Project5>
-                )
-              }
-
-              else if (i === 5) {
-                return (
-                  <S.Project6>
-                     <S.ImgProject src={item.app.src} alt="" />
-         	        </S.Project6>
-                )
-              }
-             
-             })
-           }
+          {
+            data.map((items, i) => (
+               <items.style key={i}>
+                <S.ImgProject src={items.image} alt="" />
+               </items.style>               
+            ))
+          }
           
         </S.ProjectChildren>
       

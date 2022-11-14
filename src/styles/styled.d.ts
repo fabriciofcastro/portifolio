@@ -8,11 +8,11 @@ export type Theme = typeof theme
 declare module 'styled-components' {
   export interface DefaultTheme extends Theme {
     colors: {
-        background: string
-        textPrimary: string
-        textSegunds: string
-        primary: string
-        darkGray: string
-      }
+      background: string,
+      textPrimary: string,
+      textSegunds: string,
+      primary: string,
+      darkGray: string,
+    }
   }
 }

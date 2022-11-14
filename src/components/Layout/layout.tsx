@@ -1,12 +1,13 @@
 import React from 'react';
 import Footer from '../Footer/footer';
 import Header from '../Header/Header';
+import type { AppProps } from 'next/app'
 
-interface PropsChiuldren {
-  children: React.ReactDOM
+interface PropsChildren {
+  children: any
 }
 
-const Layout = ({ children }: PropsChiuldren ) => {
+const Layout  = ({ children }: PropsChildren ) => {
   return (
     <>
     <Header />
