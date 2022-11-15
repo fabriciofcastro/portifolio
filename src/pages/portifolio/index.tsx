@@ -95,15 +95,7 @@ const portifolio = () => {
 
   const [data, setData] = useState(portifolioItems)
  
-  function filtrarImgWebsite() {
-    setData( data.filter(items => items.category === "website" ))
 
-  }
-
-  function filtrarImgApp () {
-    setData(data.filter(items => items.category === "app" ))
-    
-  }
   return (
     <>
     <Head>
@@ -123,8 +115,8 @@ const portifolio = () => {
       </S.Header>
       <S.BoxButtons>
         <ButtonActive onClick={item => setData(portifolioItems)}>TODOS</ButtonActive>
-        <ButtonOff onClick={() => setData([]) }>Webs Sites</ButtonOff>
-        <ButtonOff onClick={item => filtrarImgApp()}>Apps</ButtonOff>
+        <ButtonOff onClick={() =>  setData(data.filter(item => item.category === "website"))}>Webs Sites</ButtonOff>
+        <ButtonOff onClick={() => setData(data.filter(item => item.category === "app" ))}>Apps</ButtonOff>
       </S.BoxButtons>
       
       <S.Project>
