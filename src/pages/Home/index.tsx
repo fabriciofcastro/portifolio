@@ -23,7 +23,7 @@ export default function Home() {
           <S.Descricao>
          
               Meu nome é Fabrício Castro, moro em São Paulo/SP.
-              Estudo por 5 meses front-end. Cursando na plataforma de ensino Alura, Rocketseat.
+              Estudo front-end. Cursando na plataforma de ensino Alura, Rocketseat.
          
           </S.Descricao>
           <S.Descricao>

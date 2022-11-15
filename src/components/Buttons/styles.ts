@@ -11,6 +11,7 @@ export const ButtonActive = styled.button`
     color: #DFDFDF;
     font-weight: 600;
     font-size: 1.8rem;
+    cursor: pointer;
 `
 
 export const ButtonOff = styled.button`
@@ -24,4 +25,5 @@ export const ButtonOff = styled.button`
     color: #445964;
     font-weight: 600;
     font-size: 1.8rem;
+    cursor: pointer;
 `

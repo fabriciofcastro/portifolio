@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import * as S from './styled'
 import { ButtonActive, ButtonOff } from '../../components/Buttons/styles'
 import portif from 'public/portifolio.svg'
@@ -94,7 +94,16 @@ const portifolioItems = [
 const portifolio = () => {
 
   const [data, setData] = useState(portifolioItems)
+ 
+  function filtrarImgWebsite() {
+    setData( data.filter(items => items.category === "website" ))
 
+  }
+
+  function filtrarImgApp () {
+    setData(data.filter(items => items.category === "app" ))
+    
+  }
   return (
     <>
     <Head>
@@ -113,9 +122,9 @@ const portifolio = () => {
         </S.BoxTex>
       </S.Header>
       <S.BoxButtons>
-        <ButtonActive>TODOS</ButtonActive>
-        <ButtonOff >Webs Sites</ButtonOff>
-        <ButtonOff>Apps</ButtonOff>
+        <ButtonActive onClick={item => setData(portifolioItems)}>TODOS</ButtonActive>
+        <ButtonOff onClick={() => setData([]) }>Webs Sites</ButtonOff>
+        <ButtonOff onClick={item => filtrarImgApp()}>Apps</ButtonOff>
       </S.BoxButtons>
       
       <S.Project>
@@ -124,7 +133,7 @@ const portifolio = () => {
           {
             data.map((items, i) => (
                <items.style key={i}>
-                <S.ImgProject src={items.image} alt="" />
+                <S.ImgProject src={items.image} alt=""  /> 
                </items.style>               
             ))
           }
