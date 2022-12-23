@@ -32,7 +32,6 @@ export const Lin = styled(Link)`
 `
 
 export const IconsSocial = styled(Image)`
-
 `
 
 

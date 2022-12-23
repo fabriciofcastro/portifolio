@@ -7,7 +7,7 @@ import { ButtonActive, ButtonOff } from '../../components/Buttons/styles'
 
 const Portifolio = () => {
 
-  const [data, setData] = useState(() => {return PortifolioItems})
+  const [data, setData] = useState(() => {return PortifolioItems.sort((a, b) => Math.random() - 0.5)})
    
   function allWebSite() {
     setData(() => {return PortifolioItems})
@@ -16,7 +16,6 @@ const Portifolio = () => {
   function webSite() {
      setData(PortifolioItems)
      setData(items =>  items.filter(category => category.category !== "app"))
-   
   }
 
   function app() {
