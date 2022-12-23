@@ -1,101 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './styled'
-import { ButtonActive, ButtonOff } from '../../components/Buttons/styles'
-import portif from 'public/portifolio.svg'
-import projectImg1 from 'public/web.webp'
-import projectImg2 from 'public/web2.webp'
-import projectImg3 from 'public/web3.webp'
-import projectImg4 from 'public/web4.webp'
-import projectImg5 from 'public/web5.webp'
-import projectImg6 from 'public/web6.webp'
-import mobile from 'public/mobile.webp'
-import mobile2 from 'public/mobile2.webp'
-import mobile3 from 'public/mobile3.webp'
-import mobile4 from 'public/mobile4.webp'
-import mobile5 from 'public/mobile5.webp'
-import mobile6 from 'public/mobile6.webp'
-
 import Head from 'next/head';
+import PortifolioItems from './ItemsPortifolio'
+import portif from 'public/portifolio.svg'
+import { ButtonActive, ButtonOff } from '../../components/Buttons/styles'
 
-const portifolioItems = [
-  {
-    category: "website",
-    image:  projectImg1.src,
-    style: S.Project1
-  },
+const Portifolio = () => {
 
-  {
-    category: "website",
-    image: projectImg2.src,
-    style: S.Project2
-  },
+  const [data, setData] = useState(() => {return PortifolioItems})
+   
+  function allWebSite() {
+    setData(() => {return PortifolioItems})
+  }
 
-  {
-    category: "website",
-    image: projectImg3.src,
-    style: S.Project3
-  },
+  function webSite() {
+     setData(PortifolioItems)
+     setData(items =>  items.filter(category => category.category !== "app"))
+   
+  }
 
-  {
-    category: "website",
-    image: projectImg4.src,
-    style: S.Project4
-  },
-
-  {
-    category: "website",
-    image: projectImg5.src,
-    style: S.Project5
-  },
-  {
-    category: "website",
-    image: projectImg6.src,
-    style: S.Project6
-  },
-
-  {
-    category: "app",
-    image: mobile.src,
-    style: S.Project1
-  },
-
-  {
-    category: "app",
-    image: mobile2.src,
-    style: S.Project2
-  },
-
-  {
-    category: "app",
-    image: mobile3.src,
-    style: S.Project3
-  },
-
-  {
-    category: "app",
-    image: mobile4.src,
-    style: S.Project4
-  },
-
-  {
-    category: "app",
-    image: mobile5.src,
-    style: S.Project5
-  },
-
-  {
-    category: "app",
-    image: mobile6.src,
-    style: S.Project6
-  },
-]
-
-
-const portifolio = () => {
-
-  const [data, setData] = useState(portifolioItems)
+  function app() {
+    setData(PortifolioItems)
+    setData(items =>  items.filter(category => category.category !== "website"))
+  }
+  
  
-
   return (
     <>
     <Head>
@@ -114,9 +43,9 @@ const portifolio = () => {
         </S.BoxTex>
       </S.Header>
       <S.BoxButtons>
-        <ButtonActive onClick={item => setData(portifolioItems)}>TODOS</ButtonActive>
-        <ButtonOff onClick={() =>  setData(data.filter(item => item.category === "website"))}>Webs Sites</ButtonOff>
-        <ButtonOff onClick={() => setData(data.filter(item => item.category === "app" ))}>Apps</ButtonOff>
+        <ButtonActive onClick={allWebSite}>TODOS</ButtonActive>
+        <ButtonOff onClick={webSite}>Webs Sites</ButtonOff>
+        <ButtonOff onClick={app}>Apps</ButtonOff>
       </S.BoxButtons>
       
       <S.Project>
@@ -138,4 +67,4 @@ const portifolio = () => {
   )
 }
 
-export default portifolio;
+export default Portifolio;
